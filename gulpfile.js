@@ -115,6 +115,16 @@ function copy () {
     .pipe(gulp.dest('./dist/assets'));
 }
 
+function favicons () {
+  return gulp.src([
+        './src/favicon.png',
+        './src/favicon-16x16.png',
+        './src/favicon-32x32.png',
+        './src/favicon.ico'
+      ])
+    .pipe(gulp.dest('./dist'));
+}
+
 // Deploy
 function deploy () {
   return gulp.src('./dist/**/*')
@@ -149,7 +159,7 @@ function watchFiles() {
 
 //const build = gulp.series(clean, gulp.parallel(css, images, jekyll, js));
 const js = gulp.series(scriptsLint, scripts);
-const build = gulp.series(clean, partials, gulp.parallel(html, css, copy, js));
+const build = gulp.series(clean, partials, gulp.parallel(html, css, copy, favicons, js));
 const watch = gulp.parallel(watchFiles, browserSync);
 
 // export tasks
@@ -161,6 +171,7 @@ exports.js =          js;
 exports.clean =       clean;
 exports.concat =      concat;
 exports.copy =        copy;
+exports.favicons =    favicons;
 exports.build =       build;
 exports.watch =       watch;
 exports.deploy =      deploy;
