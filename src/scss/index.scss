@@ -1,0 +1,28 @@
+@import "./node_modules/meyer-reset-scss/_reset-src.scss";
+@import "normalize";
+@import "variables";
+@import "./node_modules/bootstrap/scss/bootstrap-grid";
+
+//Base styles:
+@import "mixins";
+@import "base";
+@import "typography";
+
+//Helpers:
+@import "helpers";
+
+//elements:
+
+//components:
+@import "logo";
+@import "buttons";
+@import "forms";
+@import "icon.scss";
+@import "header.scss";
+@import "footer.scss";
+
+@import "section_splash";
+@import "section_about";
+@import "text_w_ico_left";
+@import "section_services";
+@import "section_feedback";

@@ -1,0 +1,22 @@
+.text-ico{
+  margin-bottom: 40px;
+  display: flex;
+  flex: 120px 1;
+  align-items: center;
+  .text-ico__ico {
+    //max-width: 120px;
+    img {
+      display: block;
+      max-width: 132px;
+    }
+  }
+  .text-ico__txt {
+    padding-left: 42px;
+    .text-ico__hd {
+      line-height: 1.25;
+    }
+    .text-ico__desc {
+      font-size: 18px;
+    }
+  }
+}

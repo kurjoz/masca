@@ -1,0 +1,46 @@
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+
+  &.icon__alert {
+    background-image: url('./assets/icons/icon-alert.svg');
+  }
+  &.icon__cog {
+    background-image: url('./assets/icons/icon-cog.svg');
+  }
+  &.icon__service-stripe {
+    background-image: url('./assets/icons/icon-service-stripe.svg');
+  }
+  &.icon__service-paypal {
+    background-image: url('./assets/icons/icon-service-paypal.svg');
+  }
+  &.icon__doc-csv {
+    background-image: url('./assets/icons/icon-doc-csv.svg');
+  }
+  &.icon__doc-download {
+    background-image: url('./assets/icons/icon-doc-download.svg');
+  }
+  &.icon.icon__bin-light {
+    background-image: url('./assets/icons/icon-bin-light.svg');
+  }
+
+  // icons. XS
+  &.__icon-xs {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    vertical-align: middle;
+
+    &.icon__check {
+      background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L3 6L7 2' stroke='white' stroke-linecap='round'/%3E%3C/svg%3E");
+    }
+    &.icon__ban {
+      background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 4C8 6.20914 6.20914 8 4 8C1.79086 8 0 6.20914 0 4C0 1.79086 1.79086 0 4 0C6.20914 0 8 1.79086 8 4ZM7 4C7 5.65685 5.65685 7 4 7C3.3456 7 2.74014 6.79047 2.24705 6.43485C2.28517 6.41316 2.32104 6.38607 2.35355 6.35355L6.35355 2.35355C6.38607 2.32104 6.41316 2.28517 6.43485 2.24705C6.79047 2.74014 7 3.3456 7 4ZM1.56515 5.75295C1.58684 5.71483 1.61393 5.67896 1.64645 5.64645L5.64645 1.64645C5.67896 1.61393 5.71483 1.58684 5.75295 1.56515C5.25986 1.20953 4.6544 1 4 1C2.34315 1 1 2.34315 1 4C1 4.6544 1.20953 5.25986 1.56515 5.75295Z' fill='%234A4A4B'/%3E%3C/svg%3E");
+    }
+    &.icon__search {
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.73826 5.44538C4.24786 5.79461 3.64791 6 3 6C1.34315 6 0 4.65685 0 3C0 1.34315 1.34315 0 3 0C4.65685 0 6 1.34315 6 3C6 3.64792 5.7946 4.24786 5.44537 4.73827L7.85356 7.14658C8.04882 7.34184 8.04881 7.65843 7.85354 7.85368C7.65828 8.04894 7.3417 8.04893 7.14644 7.85367L4.73826 5.44538ZM5 3C5 4.10457 4.10457 5 3 5C1.89543 5 1 4.10457 1 3C1 1.89543 1.89543 1 3 1C4.10457 1 5 1.89543 5 3Z' fill='white'/%3E%3C/svg%3E%0A");
+    }
+  }
+}

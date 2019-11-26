@@ -1,0 +1,199 @@
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 9px 15px;
+  display: inline-block;
+  font-family: $font-family;
+  //font-weight: $btn-font-weight;
+  color: $body-color;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
+  white-space: nowrap;
+  background-color: #fefefe;
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  //border: $btn-border-width solid transparent;
+  //@include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+  //@include transition($btn-transition);
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: none;
+    //box-shadow: $btn-focus-box-shadow;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: .7;
+    outline: 0;
+    box-shadow: none;
+    //opacity: $btn-disabled-opacity;
+    //@include box-shadow(none);
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    outline: 0;
+    box-shadow: none;
+    //@include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+      //@include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+}
+.btn-primary {
+  padding: 16px 32px;
+  color: $white;
+  background-color: $blue;
+  text-transform: uppercase;
+  height: 64px;
+  border-radius: 32px;
+  font: 500;
+  &:hover,
+  &.hover {
+    outline: 0;
+    box-shadow: none;
+    background-color: darken($blue, 10%);
+  }
+  &:focus,
+  &.focus {
+    box-shadow: none;
+    outline: 0;
+    background-color: lighten($blue, 10%);
+    //box-shadow: $btn-focus-box-shadow;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    outline: 0;
+    box-shadow: none;
+    background-color: lighten($blue, 20%);
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    box-shadow: none;
+    outline: 0;
+    background-color: lighten($blue, 10%);
+    //@include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      box-shadow: none;
+      outline: 0;
+      background-color: darken($blue, 10%);
+      //@include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+}
+
+.btn-danger {
+  color: $white;
+  background-color: $red;
+  &:hover,
+  &.hover {
+    outline: 0;
+    box-shadow: none;
+    background-color: darken($red, 10%);
+  }
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: none;
+    background-color: lighten($red, 10%);
+    //box-shadow: $btn-focus-box-shadow;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    outline: 0;
+    box-shadow: none;
+    background-color: #B1C3B6;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    outline: 0;
+    box-shadow: none;
+    background-color: lighten($red, 10%);
+    //@include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+      background-color: lighten($red, 10%);
+      //@include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+}
+
+.btn-secondary {
+  color: $white;
+  background-color: $grey-outlines;
+  &:hover,
+  &.hover {
+    outline: 0;
+    box-shadow: none;
+    background-color: darken($grey-outlines, 10%);
+  }
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: none;
+    background-color: lighten($grey-outlines, 10%);
+    //box-shadow: $btn-focus-box-shadow;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    outline: 0;
+    box-shadow: none;
+    background-color: #B1C3B6;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    outline: 0;
+    box-shadow: none;
+    //@include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+      background-color: #B1C3B6;
+      //@include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+}
+.btn-ico {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.btn-ico-xs {
+  padding: 0;
+  margin: 0;
+  height: 18px;
+  width: 18px;
+}
+
+
+// Button Sizes:

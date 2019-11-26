@@ -1,0 +1,54 @@
+//Color System:
+
+$white:             #fff;
+$grey-dark:         #393C44;
+$grey-darker:       #393C44;
+$blue:              #34416C;
+$ultramarin:        #40D1D9;
+$forest-green:      #12919B;
+
+$links-color:        #323152;
+
+
+
+
+
+
+$grey:              #4A4A4B;
+$grey-ultra-light:  #F3F4F7;
+
+$grey-outlines:     #A5A6AD;
+$grey-text:         #979AA7;
+
+$green:             #35BA59;
+$green-lighter:     #51CE73;
+$red:               #E21D1D;
+
+$black:             #000;
+
+$primary: $green;
+
+//Typography:
+$font-family:    'IBM Plex Sans', sans-serif;
+$body-color:     $grey-dark;
+$headings-color: $grey-darker;
+$controls-color: $grey-darker;
+$controls-txt:   $grey-text;
+$border-color:   $grey-outlines;
+
+//Grid
+$container-max-width: 1110px;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+
+
+// Breakpoints:
+
+$desktop: 992px;
+$tablet:  768px;
+$mobile:  576px;

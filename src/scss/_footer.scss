@@ -1,0 +1,54 @@
+.footer {
+  padding: 28px 0;
+  font-size: 14px;
+  color: #5D6069;
+}
+
+.footer {
+  .row {
+    align-items: center;
+    display: flex;
+  }
+}
+.footer__logo {
+  text-align: center;
+  .logo_bw {}
+}
+.footer__copyright {
+  text-align: center;
+  display: block;
+
+}
+.footer__links {
+  text-align: center;
+}
+.footer__links-link {
+  color: #323152;
+  text-decoration: underline;
+  position: relative;
+  padding-left: 32px;
+  &:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    left: 0;
+    top: 50%;
+    margin-top: -12px;
+    position: absolute;
+    background: transparent url("./assets/ico/ico-24-mail.svg");
+  }
+}
+
+@media (min-width: $tablet) {
+  .footer__logo {
+    text-align: left;
+  }
+.footer__copyright {
+  //padding-top: 24px;
+}
+
+.footer__links {
+  //padding-top: 24px;
+  text-align: right;
+}
+}

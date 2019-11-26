@@ -1,0 +1,18 @@
+.img-block {
+  display: block;
+  max-width: 100%;
+}
+.section_about {
+  padding: 80px 0;
+  background: #F5F6F8 url('./assets/decorator-1-bl.png') bottom left no-repeat;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 322px;
+    height: 373px;
+    top: 0;
+    right: 0;
+    background: #F5F6F8 url('./assets/decorator-1-tr.png') bottom left no-repeat;
+  }
+}
