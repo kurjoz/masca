@@ -3043,6 +3043,7 @@ button {
   text-align: center; }
 
 .footer__copyright {
+  padding: 16px 0;
   text-align: center;
   display: block; }
 
@@ -3081,6 +3082,14 @@ button {
 
 .promo-text {
   margin-bottom: 32px; }
+
+@media (max-width: 767px) {
+  .section_splasher {
+    text-align: center; }
+  .splasher-promo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 320px; } }
 
 .img-block {
   display: block;
@@ -3157,7 +3166,7 @@ button {
   line-height: 150%; }
 
 .section_feedback .form-container .input-control {
-  background-color: transparent;
+  background-color: #34416c;
   color: #fff;
   font-size: 18px; }
 
