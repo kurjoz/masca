@@ -2550,18 +2550,19 @@ body, h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin: 0 0 8px;
-  font-size: 60px; }
+  font-size: 60px;
+  line-height: 1.175; }
 
 h1, h2 {
   font-family: IBM Plex Sans,sans-serif;
   color: #393c44;
   font-style: normal;
-  font-weight: 700;
-  line-height: 1.5; }
+  font-weight: 700; }
 
 h2 {
   margin: 0 0 20px;
-  font-size: 40px; }
+  font-size: 40px;
+  line-height: 1.5; }
 
 h3 {
   margin: 0 0 16px;
@@ -2701,7 +2702,12 @@ a:hover {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 29px; }
+  line-height: 29px;
+  width: 220px; }
+
+.logo > img {
+  display: block;
+  width: 100%; }
 
 button {
   cursor: pointer; }
@@ -3041,6 +3047,9 @@ button {
 
 .footer__logo {
   text-align: center; }
+
+.footer__logo .logo_bw {
+  width: auto; }
 
 .footer__copyright {
   padding: 16px 0;
