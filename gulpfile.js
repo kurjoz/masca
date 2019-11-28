@@ -25,6 +25,7 @@ const uglify = require('gulp-uglify-es').default;
 const concat = require('gulp-concat');
 const flattern = require('gulp-flatten');
 const sourcemaps = require('gulp-sourcemaps');
+const formatHtml = require('gulp-format-html')
 
 // BrowserSync
 function browserSync(done) {
@@ -80,6 +81,7 @@ function html () {
         prefix: '@@',
         basepath: '@file'
       }))
+      .pipe(formatHtml())
     .pipe(gulp.dest('./dist'));
 
 }

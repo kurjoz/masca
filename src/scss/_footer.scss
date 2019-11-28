@@ -12,9 +12,12 @@
 }
 .footer__logo {
   text-align: center;
-  .logo_bw {}
+  .logo_bw {
+    width: auto;
+  }
 }
 .footer__copyright {
+  padding: 16px 0;
   text-align: center;
   display: block;
 
